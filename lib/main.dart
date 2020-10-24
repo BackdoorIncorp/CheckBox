@@ -35,6 +35,7 @@ class _State extends State<MyApplication> {
                   subtitle: new Text("Youre Subtitle"),
                   dense: true,
                   isThreeLine: true,
+                  controlAffinity: ListTileControlAffinity.leading,
                   onChanged: value2changed
               )
             ],
