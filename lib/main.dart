@@ -29,7 +29,14 @@ class _State extends State<MyApplication> {
         child: new Center(
           child: new Column(
             children: <Widget>[
-              new Text("Hello World")
+              new CheckboxListTile(value: value2,
+                  title: new Text("Youre Title"),
+                  activeColor: Color.lerp(Colors.redAccent, Colors.lightBlue, 20),
+                  subtitle: new Text("Youre Subtitle"),
+                  dense: true,
+                  isThreeLine: true,
+                  onChanged: value2changed
+              )
             ],
           ),
         ),
